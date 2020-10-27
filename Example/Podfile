@@ -1,11 +1,14 @@
 source 'https://github.com/Chj1995/FFSpecs.git'
+source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+
 use_frameworks!
 
 platform :ios, '8.0'
 
 target 'FFAPIsKit_Example' do
   pod 'FFAPIsKit', :path => '../'
-
+  pod 'FFToolsKit'
+  
   target 'FFAPIsKit_Tests' do
     inherit! :search_paths
 
